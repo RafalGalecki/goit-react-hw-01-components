@@ -1,0 +1,31 @@
+.item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 200px;
+  padding: 8px;
+  gap: 12px;
+  border-radius: 2px;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.12), 0px 3px 3px rgba(0, 0, 0, 0.14),
+    0px 6px 3px rgba(0, 0, 0, 0.2);
+}
+.name {
+  font-size: 18px;
+  font-weight: 600;
+  color: darkgrey;
+}
+.status {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 15px;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: grey;
+}
+.status.online {
+  background-color: green;
+}
+.status.offline {
+  background-color: red;
+}
