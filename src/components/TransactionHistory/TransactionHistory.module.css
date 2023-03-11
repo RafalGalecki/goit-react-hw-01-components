@@ -1,10 +1,30 @@
 .transactionHistory {
-  display: flex;
-  flex-direction: column;
-  min-width: 240px;
-  gap: 10px;
-  padding: 10px;
-  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.12), 0px 3px 3px rgba(0, 0, 0, 0.14),
-    0px 6px 3px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.3), -1px -1px 2px rgb(0, 0, 0, 0.3);
+  border-collapse: collapse;
+  margin: 20px 0;
+  color: grey;
+}
+.transactionHistory > thead > tr {
+  background-color: skyblue;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.transactionHistory tr {
+  text-align: center;
+}
+
+.transactionHistory td,
+.transactionHistory th {
+  padding: 8px 30px;
+  border: 1px solid lightgray;
+}
+
+.transactionHistory tr > th:first-child,
+.transactionHistory tr > td:first-child {
+  text-align: start;
+}
+
+.transactionHistory > tbody > tr:nth-child(2n) {
+  background-color: aliceblue;
 }
