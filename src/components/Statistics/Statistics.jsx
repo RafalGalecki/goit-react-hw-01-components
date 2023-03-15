@@ -6,7 +6,7 @@ const Statistics = ({ label, stats = [] }) => {
     <section className={css.statistics}>
       {stats.length > 0 ? (
         <>
-          {label && <h2 className={css.title}>{label}</h2>}
+          {label ? <h2 className={css.title}>{label}</h2> : null}
           <ul className={css.statList}>
             {stats.map(el => (
               <li
